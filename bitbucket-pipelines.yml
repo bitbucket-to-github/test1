@@ -25,6 +25,9 @@ pipelines:
             - target/*.war
             
       - step:
+          runs-on:
+             - self.hosted
+             - linux.shell
           name: Security Scan
           clone:
            depth: full    # SonarCloud scanner needs the full history to assign issues properly
@@ -39,7 +42,6 @@ pipelines:
              - linux.shell
           name: Deployment
           script:
-            - mkdir -p /home/fs-lp-madhav/Tomcat/apache-tomcat-9.0.76/webapps/
             - cp -rvf target/*.war /home/fs-lp-madhav/Tomcat/apache-tomcat-9.0.76/webapps/
             - ls /home/fs-lp-madhav/Tomcat/apache-tomcat-9.0.76/webapps/
           artifacts:
