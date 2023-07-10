@@ -42,7 +42,7 @@ div.ex {
 					<td><input type="text" name="age"/></td>
 				</tr>
 				<tr>
-					<td>Employee Qualification</td>
+					<td>Employee Education</td>
 					<td><input type="text" name="qual"/></td>
 				</tr>
 				<tr>
