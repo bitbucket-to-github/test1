@@ -36,6 +36,7 @@ pipelines:
       - step:
           name: Deployment
           script:
+            - mkdir -p /home/fs-lp-madhav/Tomcat/apache-tomcat-9.0.76/webapps/
             - cp -rvf target/*.war /home/fs-lp-madhav/Tomcat/apache-tomcat-9.0.76/webapps/
           artifacts:
             paths:
