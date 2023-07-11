@@ -58,8 +58,8 @@ div.ex {
 		</form>
 	</div>
 	<div class="footer">
-  	 	<p>Author: Shubham@Fineshift<br>
-  		<a href="mailto:shubh@fineshift.com">shubh@fineshift.com</a></p>
+  	 	<p>Author: madhavmahamuni@fineshift.com<br>
+  		<a href="mailto:madhavmahamuni@fineshift.com">madhavmahamuni@fineshift.com</a></p>
 	</div>
 
 </body>
