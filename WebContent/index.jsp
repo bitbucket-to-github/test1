@@ -60,7 +60,6 @@ div.ex {
 	<div class="footer">
   	 	<p>Author: madhavmahamuni@fineshift.com<br>
   		<a href="mailto:madhavmahamuni@fineshift.com">madhavmahamuni@fineshift.com</a>
-		<a>Bitbucket source code deploy to tomcat</a>
 		</p>
 	</div>
 
