@@ -30,7 +30,7 @@ pipeline {
 
                 withSonarQubeEnv('sonarserver') {
 
-                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=fs-bitbucket_fs_employee_AYlPLJp_qqhibVYfSfU_"
+                    sh "mvn sonar:sonar"
 
                 }
 
