@@ -24,9 +24,9 @@ pipeline {
 
         }
 
-        stage('Test-SonarQube Analysis') {
+        stage('Test') {
 
-            steps {
+            steps('SonarQube Analysis') {
 
                 def mvn = tool 'Default Maven';
 
@@ -37,17 +37,18 @@ pipeline {
                 }
 
             }
+        }
 
-            stage('Deploy') {
+        stage('Deploy') {
 
-                steps {
+            steps {
 
                     deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/webapps', url: 'http://localhost:8081')], contextPath: '/', war: '**/target/*.war'
-
-                }
 
             }
 
         }
+
+        
     }
 }
