@@ -38,5 +38,5 @@ pipelines:
              - linux.shell
           name: Deployment
           script:
-            - cp -rvf target/*.war /opt/tomcat/webapps/
-            - ls /opt/tomcat/webapps/
+            - cp -rvf target/*.war /Tomcat/webapps/
+            - ls /Tomcat/webapps/
