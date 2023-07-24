@@ -27,7 +27,9 @@ pipeline {
         stage('Test') {
 
             steps('SonarQube Analysis') {
-
+            
+                def mvn = tool 'Maven';
+                
                 withSonarQubeEnv('sonarserver') {
 
                     sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=fs-bitbucket_fs_employee_AYmHjqTzWN41pmEqNY7r"
