@@ -27,8 +27,6 @@ pipeline {
         stage('Test') {
 
             steps('SonarQube Analysis') {
-            
-                def mvn = tool 'Maven';
                 
                 withSonarQubeEnv('sonarserver') {
 
