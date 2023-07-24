@@ -24,9 +24,9 @@ pipeline {
 
         }
 
-        stage('Test') {
+        stage('Test-SonarQube Analysis') {
 
-            steps('SonarQube Analysis') {
+            steps {
 
                 def mvn = tool 'Default Maven';
 
