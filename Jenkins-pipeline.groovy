@@ -28,8 +28,6 @@ pipeline {
 
             steps('SonarQube Analysis') {
 
-                def mvn = tool 'Default Maven';
-
                 withSonarQubeEnv('sonarserver') {
 
                     sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=fs-bitbucket_fs_employee_AYlPLJp_qqhibVYfSfU_"
