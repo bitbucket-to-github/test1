@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                git credentialsId: 'jenkins', url: 'https://prajyotii@bitbucket.org/fs-bitbucket/fs_employee.git'
+                git credentialsId: 'jenkins', url: 'https://madhav_mahamuni@bitbucket.org/fs-bitbucket/fs_employee.git'
 
             }
 
@@ -40,7 +40,7 @@ pipeline {
         stage('Deploy') {
 
             steps {
-                    sh "cp -r /var/lib/jenkins/workspace/ci-cd pipeline/target/studentapp-2.2-SNAPSHOT.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps"
+                    sh "cp -rvf /var/lib/jenkins/workspace/ci-cd pipeline/target/studentapp-2.2-SNAPSHOT.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps"
                     //deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/webapps', url: 'http://localhost:8081')], contextPath: '/', war: '/var/lib/jenkins/workspace/ci-cd pipeline/target/*.war'
 
             }
