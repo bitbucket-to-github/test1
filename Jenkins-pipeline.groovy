@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                git credentialsId: 'jenkins', url: 'https://bitbucket.org/fs-bitbucket/fs_employee.git'
+                git credentialsId: 'jenkins', url: 'https://madhav_mahamuni@bitbucket.org/fs-bitbucket/fs_employee.git'
 
             }
 
