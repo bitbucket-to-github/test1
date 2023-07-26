@@ -41,7 +41,7 @@ pipeline {
         stage('Deploy') {
                 
             steps {
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps/', url: 'https://localhost:8081')], contextPath: '/', war: '**/*.war'
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps', url: 'https://localhost:8081')], contextPath: '/', war: '**/*.war'
                     //sh "sudo cp **/*.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps/" 1
             }
 
