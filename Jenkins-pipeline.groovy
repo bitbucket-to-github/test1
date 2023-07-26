@@ -40,8 +40,8 @@ pipeline {
         stage('Deploy') {
 
             steps {
-                    sh "cp -rvf /var/lib/jenkins/workspace/ci-cd%20pipelinepipeline/target/studentapp-2.2-SNAPSHOT.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps"
-                    //deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/webapps', url: 'http://localhost:8081')], contextPath: '/', war: '/var/lib/jenkins/workspace/ci-cd pipeline/target/*.war'
+            
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '/home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps', url: 'http://localhost:8081')], contextPath: '/', war: '**/target/*.war'
 
             }
 
