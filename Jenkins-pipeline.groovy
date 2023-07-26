@@ -42,7 +42,7 @@ pipeline {
                 
             steps {
                     //deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'https://localhost:8081')], contextPath: '/', war: '**/*.war'
-                    cp **/*.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps/
+                    sh "cp **/*.war /home/fs-shubhranshu/Tomcat/apache-tomcat-9.0.78/webapps/"
             }
 
         }
