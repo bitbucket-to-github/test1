@@ -58,7 +58,7 @@ div.ex {
 		</form>
 	</div>
 	<div class="footer">
-  	 	<p>Author: madhavmahamuni@fineshift.com<br>
+  	 	<p>Author: Jenkins CI/CD <br>
   		<a href="mailto:madhavmahamuni@fineshift.com">madhavmahamuni@fineshift.com</a>
 		</p>
 	</div>
